@@ -1,2 +1,6 @@
 /Data/*.csv
 /Data/Datasets/
+/Classifier/Bert_classifier/
+/Data/.ipynb_checkpoints
+
+
