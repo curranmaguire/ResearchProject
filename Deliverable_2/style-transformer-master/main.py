@@ -6,12 +6,12 @@ from train import train, auto_eval
 
 
 class Config():
-    data_path = './data/yelp/'
-    log_dir = 'runs/exp'
+    data_path = '/home2/cgmj52/ResearchProject/Data/Datasets'
+    log_dir = './runs/exp'
     save_path = './save'
     pretrained_embed_path = './embedding/'
     device = torch.device('cuda' if True and torch.cuda.is_available() else 'cpu')
-    discriminator_method = 'Multi' # 'Multi' or 'Cond'
+    discriminator_method = 'Cond' # 'Multi' or 'Cond'
     load_pretrained_embed = False
     min_freq = 3
     max_length = 16
@@ -57,4 +57,7 @@ def main():
     
 
 if __name__ == '__main__':
+    start = time.time()
     main()
+    end = time.time()
+    print(f'training time took {end - start}')
