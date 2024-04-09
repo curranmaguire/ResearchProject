@@ -2,7 +2,7 @@
 /Data/Datasets/
 /Classifier/Bert_classifier/
 /Data/.ipynb_checkpoints
-/Data/gpt.dev
-/Data/gpt.train
-/Data/gpt.test
+/Data/*.dev
+/Data/*.train
+/Data/*.test
 

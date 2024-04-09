@@ -1,7 +1,0 @@
-.idea/
-build/
-dist/
-imt.egg-info/
-env/
-*.pyc
-model/
