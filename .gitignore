@@ -9,4 +9,6 @@
 /Data/*.corpus
 /*/*/Data/
 
-/Deliverable_2/lewis/data/*
+*/__py*
+*/.ipynb_checkpoints
+Deliverable_3/results/*
