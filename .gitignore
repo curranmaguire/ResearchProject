@@ -1,0 +1,12 @@
+/Data/*.csv
+/Data/Datasets/
+/Classifier/Bert_classifier/
+/Data/.ipynb_checkpoints
+/Data/*.dev
+/Data/*.train
+/Data/*.test
+/Data/*.whole
+/Data/*.corpus
+/*/*/Data/
+
+/Deliverable_2/lewis/data/*

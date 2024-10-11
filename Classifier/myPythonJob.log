@@ -1,0 +1,39 @@
+2024-03-12 17:47:36.943281: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2024-03-12 17:47:37.903157: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-03-12 17:47:40.776171: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+loaded the data. Moving onto tokenizing and cleaning.
+
+Map:   0%|          | 0/10000 [00:00<?, ? examples/s]
+Map:  10%|█         | 1000/10000 [00:02<00:19, 471.85 examples/s]
+Map:  20%|██        | 2000/10000 [00:03<00:15, 531.43 examples/s]
+Map:  30%|███       | 3000/10000 [00:05<00:12, 560.52 examples/s]
+Map:  40%|████      | 4000/10000 [00:07<00:10, 590.10 examples/s]
+Map:  50%|█████     | 5000/10000 [00:08<00:08, 585.10 examples/s]
+Map:  60%|██████    | 6000/10000 [00:10<00:06, 597.71 examples/s]
+Map:  70%|███████   | 7000/10000 [00:11<00:04, 620.13 examples/s]
+Map:  80%|████████  | 8000/10000 [00:13<00:03, 621.52 examples/s]
+Map:  90%|█████████ | 9000/10000 [00:15<00:01, 632.29 examples/s]
+Map: 100%|██████████| 10000/10000 [00:16<00:00, 625.94 examples/s]
+Map: 100%|██████████| 10000/10000 [00:16<00:00, 595.26 examples/s]
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Encoded the Data. Moving onto training
+
+{'loss': 0.1265, 'grad_norm': 0.20918506383895874, 'learning_rate': 1.6800000000000002e-05, 'epoch': 0.8}
+
+{'eval_loss': 0.025613168254494667, 'eval_accuracy': 0.9944, 'eval_runtime': 218.0115, 'eval_samples_per_second': 45.869, 'eval_steps_per_second': 2.867, 'epoch': 1.0}
+{'loss': 0.0241, 'grad_norm': 0.007519809063524008, 'learning_rate': 1.3600000000000002e-05, 'epoch': 1.6}
+
+{'eval_loss': 0.022483106702566147, 'eval_accuracy': 0.9948, 'eval_runtime': 211.9351, 'eval_samples_per_second': 47.184, 'eval_steps_per_second': 2.949, 'epoch': 2.0}
+{'loss': 0.0118, 'grad_norm': 0.005582467187196016, 'learning_rate': 1.04e-05, 'epoch': 2.4}
+
+{'eval_loss': 0.03646496683359146, 'eval_accuracy': 0.9939, 'eval_runtime': 211.8416, 'eval_samples_per_second': 47.205, 'eval_steps_per_second': 2.95, 'epoch': 3.0}
+{'loss': 0.003, 'grad_norm': 0.0036518159322440624, 'learning_rate': 7.2000000000000005e-06, 'epoch': 3.2}
+{'loss': 0.0013, 'grad_norm': 0.002670652698725462, 'learning_rate': 4.000000000000001e-06, 'epoch': 4.0}
+
+{'eval_loss': 0.03705596178770065, 'eval_accuracy': 0.9942, 'eval_runtime': 211.5979, 'eval_samples_per_second': 47.259, 'eval_steps_per_second': 2.954, 'epoch': 4.0}
+{'loss': 0.0002, 'grad_norm': 0.0021841544657945633, 'learning_rate': 8.000000000000001e-07, 'epoch': 4.8}
+
+

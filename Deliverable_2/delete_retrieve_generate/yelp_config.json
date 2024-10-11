@@ -1,0 +1,39 @@
+{
+  "training": {
+    "optimizer": "adam",
+    "learning_rate": 0.0003,
+    "max_norm": 3.0,
+    "epochs": 70,
+    "batches_per_report": 200,
+    "batches_per_sampling": 500,
+    "random_seed": 1,
+    "inference_start_epoch": 5
+  },
+  "data": {
+    "src": "data/GPT-BLOG/sentiment.train.0",
+    "tgt": "data/GPT-BLOG/sentiment.train.1",
+    "src_test": "data/GPT-BLOG/sentiment.test.0",
+    "tgt_test": "data/GPT-BLOG/sentiment.test.1",
+    "src_vocab": "vocab.txt",
+    "tgt_vocab": "vocab.txt",
+    "share_vocab": true,
+    "attribute_vocab": "ngram_attribute_vocab.txt",
+    "ngram_attributes": true,
+    "batch_size": 256,
+    "max_len": 30,
+    "working_dir": "output"
+  },
+  "model": {
+    "model_type": "delete_retrieve",
+    "emb_dim": 256,
+    "attention": false,
+    "encoder": "lstm",
+    "src_hidden_dim": 256,
+    "src_layers": 1,
+    "bidirectional": true,
+    "tgt_hidden_dim": 256,
+    "tgt_layers": 1,
+    "decode": "greedy",
+    "dropout": 0.2
+  }
+}
